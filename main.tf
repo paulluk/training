@@ -45,8 +45,6 @@ resource "aws_instance" "web" {
   subnet_id              = "subnet-bf2137db"
   vpc_security_group_ids = ["sg-67393600"]
   count                  = "${var.num_webs}"
-
-  Fake command
   
   tags {
     "Identity" = "datapipe-bat"
