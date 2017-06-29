@@ -46,6 +46,8 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = ["sg-67393600"]
   count                  = "${var.num_webs}"
 
+  Fake command
+  
   tags {
     "Identity" = "datapipe-bat"
     Name       = "web ${count.index + 1}/${var.num_webs}"
